@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/wallpaper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background: rgb(39, 190, 32);
+    background: linear-gradient(90deg, rgba(39, 190, 32, 0.7) 0%, rgba(19, 102, 15, 0.7) 20%, rgba(17, 94, 13, 0.7) 80%, rgba(39, 177, 32, 0.7) 100%);
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    z-index: 9999;
+}
+
+#logo {
+    width: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+
+ul:first-child {
+    cursor: default;
+}
+
+.active {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+li:hover {
+
+    font-size: larger;
+    font-weight: bold;
+}
+
+.row {
+    padding-left: 8%;
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col1 {
+    margin-right: 20px;
+    flex-basis: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: large;
+}
+
+div.col>p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 16px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #3d39fa;
+    color: white;
+    align-content: center;
+}
+
+.contain-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contain-card>* {
+    flex-basis: 35%;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 2px 5px 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card>a>* {
+    font-size: 14px;
+}
+
+.card>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card1 {
+    background-image: url("images/pokemon-wiki.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card2 {
+    background-image: url("images/webstore-card.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: antiquewhite;
+}
+
+.card3 {
+    background-image: url("images/company-logo.gif");
+    background-size: 199px 195px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    
+}
+
+.card4 {
+    background-image: url("images/pokemon-go-dl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+.enlarge {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+div.card>* {
+    text-shadow: 0px 0px 4px rgb(0, 0, 0);
+    color: white;
+    text-shadow: #000;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.foot {
+    background: rgb(0, 76, 75);
+    background: linear-gradient(90deg, rgba(0, 76, 75, 1) 0%, rgba(107, 166, 165, 1) 35%, rgba(107, 166, 165, 1) 65%, rgba(0, 76, 75, 1) 100%);
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.footcontent {
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.footmenu {
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    justify-content: space-between;
+}
+
+.footmenu-items {
+    display: inline-flex;
+    text-align: left;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.footmenu-items>a {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.footmenu-items>a:hover {
+    text-decoration: underline;
+}
+
+.footmenu-logo {
+    display: flex;
+}
+
+.footmenu-logo>a {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.socials {
+    word-spacing: 20px;
+    margin-bottom: 20px;
+}
+
+.socials>a>img {
+    filter: invert(1);
+}
+
+.Policies {
+    width: 100%;
+    padding: 15px 0px 15px;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: space-evenly;
+
+}
+
+.Policies>a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Policies>a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 25px;
+}
+
+.copyright>p {
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+/* About US STYLE */
+.About-us {
+    padding: 15px 0px 15px;
+    width: 100%;
+    text-align: center;
+    background-color: #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.About-us>h1 {
+    margin-bottom: 15px;
+    color: red;
+    font-size: 35px;
+}
+
+.About-us>img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.About-us>p {
+    padding: 5px;
+    font-size: 20px;
+}
+.About-us>h3 {
+    text-shadow: 10px;
+
+}
+
+.About-us>a {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background: #3B5998;
+    color: white;
+    border-radius: 8px;
+    font-size: 50px;
+}
+
+/* SHOP WEBPAGE */
+.shop {
+    background-color: #89CFF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.shop-header {
+    margin-bottom: 50px;
+}
+
+.shop-header-card {
+    width: auto;
+    height: auto;
+}
+
+.shop-header-card>h3 {
+    padding: 10px;
+    position: inherit;
+    width: 50%;
+    margin-top: -100px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: x-large;
+}
+
+.shop-header-card>img {
+    border-radius: 15px;
+}
+
+div.shop-card p h4 {
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    color: white;
+    text-shadow: #000;
+    text-align: center;
+}
+
+.shop-row {
+    display: flex;
+    height: 100;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.shop-contain-card {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.shop-contain-card>* {
+    flex-basis: 25%;
+}
+
+.shop-card {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0px 0px 38px -14px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 38px -14px rgba(0,0,0,1);
+    box-shadow: 0px 0px 38px -14px rgba(0,0,0,1);
+    flex-direction: column;
+}
+
+.shop-card>a>* {
+    font-size: 14px;
+}
+
+.shop-card>a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#shopContents {
+    width: 85%;
+    height: auto;
+}
+
+#pokeCoins {
+    text-align: start;
+    margin-bottom: 25px;
+}
+
+.shop-card1 {
+    background-color: rgb(170, 218, 228);
+    background-image: url("images/pokecoin-stack.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.shop-card2 {
+    background-color: rgb(170, 218, 228);
+    background-image: url("images/pokecoin-pouch.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.shop-card3 {
+    background-image: url("images/pokecoin-bucket.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(170, 218, 228);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.shop-card4 {
+    background-image: url("images/pokecoin-chest.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(170, 218, 228);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 10px 10px 0px 0px;
+}
+.shop-card5 {
+    background-image: url("images/pokecoin-heap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(170, 218, 228);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.shop-card:hover {
+    transition: all 0.5s;
+    transform: translateY(-10px);
+    -webkit-box-shadow: 0px 8px 17px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 8px 17px -1px rgba(0,0,0,1);
+    box-shadow: 0px 8px 17px -1px rgba(0,0,0,1);
+}
+.pokeCoins-Info{
+    color: white;
+    border-bottom-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    padding: 15px;
+    padding-top: 30px;
+    background-color: #3B5998;
+}
+.bonusCoin{
+    display: flex;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-image: url("images/pokecoin.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 22%;
+    align-items: center;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.bonusCoin > p{
+    font-family: 'Pokemon Solid', sans-serif;
+}
+.bonusInfo{
+    font-size: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    height: 80px;
+    width: 30%;
+    position: relative;
+    top: -92px;
+    left: 40px;
+    margin-left: 10px;
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* 
+@media only screen and (max-width: 786px ){
+    [class*="row-"]{
+        width: 100vw;
+    }    
+} */
+
+.ground{
+        background-image: url("FINALS/images/register.jpg");
+}
